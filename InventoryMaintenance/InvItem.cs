@@ -20,8 +20,6 @@ namespace InventoryMaintenance
             public string Description { get; set; }
         public decimal Price { get; set; }
 
-
-        // Uncomment and ensure the method signature is virtual string GetDisplayText()
         public virtual string GetDisplayText() => $"{ItemNo}    {Description} ({Price:c})";
         }
     }
